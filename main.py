@@ -13,6 +13,7 @@ name1_score = 0
 name2_score = 0
 total = 0
 
+
 name1_score += name1_l.count("t")
 name1_score += name1_l.count("r")
 name1_score += name1_l.count("u")
@@ -31,13 +32,13 @@ name2_score += name2_l.count("o")
 name2_score += name2_l.count("v")
 name2_score += name2_l.count("e")
 
-total = name2_score + name1_score
+
+
+total = int(str(name2_score) + str(name1_score))
 
 if total < 10 or total > 90:
-  print(f"Your score is {total}, you go together like coke and mentos.")
+  print(f"Your score is {total}%, you go together like coke and mentos.")
 elif total > 40 and total < 50:
-  print(f"Your score is {total}, you are alright together.")
+  print(f"Your score is {total}%, you are alright together.")
 else:
-  print(f"Your score is {total}.")
-
-  
+  print(f"Your score is {total}%.")
